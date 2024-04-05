@@ -1,0 +1,25 @@
+.page{
+  display: grid;
+  grid-template-rows: 50px 1fr 30px;
+}
+header,footer{
+  background-color: black;
+  color: palevioletred;
+}
+.task-list{
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+.nav{
+  display: flex;
+  gap:10px;
+  font-size: 1.5rem;
+}
+.nav a{
+  color:aqua;
+}
+.nav a.active{
+    background-color:black;
+    color:palevioletred;
+}

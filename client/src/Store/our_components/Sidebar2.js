@@ -154,15 +154,13 @@ const Sidebar2 = () => {
         console.log("i dont have any");
         return <div>Loading...</div>;
     }
-    console.log("i innnnnnnnnnnnnnnnnnnnn");
+    
     return (
         <>
-        uuyuuu
+        
         {/* <AppAppBar/> */}
-           ukiuo8o
-
-           yyytruy
-            <Sidebar visible={visible} onHide={() => setVisible(false)} className="w-full md:w-20rem lg:w-30rem">
+        
+            {/* <Sidebar visible={visible} onHide={() => setVisible(false)} className="w-full md:w-20rem lg:w-30rem">
                     <div className="card flex flex-column justify-content-center align-items-center">
                         <h2 className="mb-3">Your Basket</h2>
                         <h2> {username}</h2>
@@ -182,7 +180,7 @@ const Sidebar2 = () => {
                         </div>
                         <Button onClick={func} label="לסיום הרכישה" className="p-button-raised p-button-info mt-3" />
                     </div>
-                </Sidebar><br></br><br></br><br></br>
+                </Sidebar><br></br><br></br><br></br> */}
                 <div className="card xl:flex xl:justify-content-center">
                     
                 <OrderList

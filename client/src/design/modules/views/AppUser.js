@@ -24,13 +24,6 @@ import { useGetVacationsQuery } from '../../../Store/Slices/vacationApiSlice';
 import useAuth from '../../../Store/app/useAuth'
 import useAxios from 'axios-hooks'
 
-// const rightLink = {
-//   fontSize: 16,
-//   color: '#f36',
-//   ml: 3,
-// };
-
-
    
   
 function AppUser() {
@@ -47,7 +40,7 @@ function AppUser() {
   )
   const handleSignInAlert = () => {
     
-  alert("You have to sign in...");
+  alert("כדי לראות אתה צריך להתחבר...");
 }
   const dispatch=useDispatch()
 
@@ -77,15 +70,6 @@ let ind=0
   }
 
   
-    // {
-    //     if (ind !== -1 && data[ind]?.shoppingCart) {
-    //   let len2 = data[ind].shoppingCart.length;
-    //   setLen(len2)
-    //  const dataUser=data[ind];
-    // }
-    // }
-    //   setLen(data[ind]?.shoppingCart?.length);
-    //   console.log("data",data);
   }, [ data]);
  const shoppingCartIcon = (
     <Button icon="pi pi-shopping-cart">
@@ -157,14 +141,7 @@ let ind=0
   const handleClick = () => {
     setMenuClicked(!menuClicked);
   };
-  // useEffect(() => {
-  //   if ( data) {
-  //     console.log("k111111111", data);
-  //     const len2 = data[ind]?.shoppingCart.length;
-  //     setLen(len2);
-  //   }
-  // }, [data]); // Make sure to include 'ind' if it's used inside the effect
-  
+
 
   return (
     <div>

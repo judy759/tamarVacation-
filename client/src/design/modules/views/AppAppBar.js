@@ -21,24 +21,9 @@ import { removeToken } from '../../../Store/Slices/authSlice';
 import { useDispatch } from 'react-redux';
 
 
-const rightLink = {
-  fontSize: 16,
-  color: '#f36',
-  ml: 3,
-};
-
 function AppAppBar() {
   const dispatch=useDispatch()
-  // const navigate = useNavigate();
-  // const logoutClick = () => {
-  //   log
-  //   if(localStorage.getItem("token")){
-  //   console.log("hhhhhhhhhhh");
-  //   console.log("localstor",localStorage.getItem("token"))
-  //   localStorage.setItem("token",null)
-  //   console.log("localstorafter",localStorage.getItem("token"))
-  //   }
-  // };
+ 
 
 
   const funci =() =>{
@@ -73,11 +58,6 @@ function AppAppBar() {
           icon: 'pi pi-history',
           url: '/Package'
       },
-      // {
-      //     label: '',
-      //     icon: 'pi pi-shopping-cart',
-      //     url: '/Sidebar2'
-      // },
       {
         label: 'כך זה יוצג למשתמש-חבילות הנופשים',
         icon: 'pi pi-shopping-cart',
@@ -106,10 +86,7 @@ function AppAppBar() {
              
           ]
       },
-      {
-          label: 'צור קשר',
-          icon: 'pi pi-envelope'
-      }
+      
   ];
 
   const handleClick = () => {
@@ -117,101 +94,18 @@ function AppAppBar() {
   };
 
   return (
-    <div>
+<div>
       {/* <AppBar position="fixed"> */}
       <div style={{ position: 'fixed', top: 0, left: 0, right: 0, zIndex: 999 }}>
-    <div className="flex items-center justify-between card" style={{ padding: '0.5rem' }}>
-        {/* <img className="w-9 sm:w-8em xl:w-10rem shadow-2 block xl:block mx-auto border-round" src={logo} alt="Logo" style={{ width: '3%' }}/> */}
-        <Menubar model={items} onClick={handleClick} style={{ width: '100%', backgroundColor: '#fffff', color: '#b12c16' }} />
-    </div>
-</div>
-        {/* <Toolbar sx={{ justifyContent: 'space-between' }}>
-         
-          <Box sx={{ color: "#ffffff",flex: 1 }} />
-          <Link
-            variant="h6"
-            underline="none"
-            color="#ffffff"
-            style={{color:'#ffffff'}}
-            to="/"
-            sx={{ fontSize: 24 }}
-            icon= 'pi pi-home'
-          >
-            {'ראשי'}
-          </Link>
-          <Box sx={{ color: "#ffffff",flex: 1 }} />
-          <Link
-            variant="h6"
-            underline="none"
-            color="#ffffff"
-            style={{color:'#ffffff'}}
-            to="/Package"
-            sx={{ fontSize: 24 }}
-          >
-            {'רכישות קודמות'}
-          </Link>
-          <Box sx={{ color: "#ffffff",flex: 1 }} />
-          <Link
-            variant="h6"
-            underline="none"
-            color="#ffffff"
-            style={{color:'#ffffff'}}
-            to="/UserList"
-            sx={{ fontSize: 24 }}
-          >
-            {'עריכת נופש-מנהל בלבד'}
-          </Link>
-          <Box sx={{ color: "#ffffff",flex: 1 }} />
-          <Link
-            variant="h6"
-            underline="none"
-            color="#ffffff"
-            style={{color:'#ffffff'}}
-            onClick={logoutClick}
-            to="/SignIn"
-            sx={{ fontSize: 24 }}>
-             <img src={img1} style={{ marginRight: '0.5rem', width: '24px', height: '24px', opacity: '0.5' ,color:"#ffffff"}} />
-          
-            {'להתנתק'}
-          </Link>
-          <Box sx={{ color: "#ffffff",flex: 1 }} />
-          <Link
-            variant="h6"
-            underline="none"
-            color="#ffffff"
-            style={{color:'#ffffff'}}
-            to="/Shop"
-            sx={{ fontSize: 24 }}
-          >
-            {'קנית נופשים'}
-          </Link>
-          <Box sx={{ color: "#f36", flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
-            <Link
-              color="white"
-              variant="h6"
-              underline="none"
-              style={{color:'#fff5f8'}}
-              to="/SignIn"
-              sx={{ fontSize: 24 }}
-            >
-              {'Sign In'}
-              <br />
-            </Link>
-            <Link
-              variant="h6"
-              underline="none"
-              to="/SignUp"
-              style={{color:'#fff5f8'}}
-              sx={{ ...rightLink, color: '#ffffff' }}
+        <div className="flex items-center justify-between card" style={{ padding: '0.5rem' }}>
+          {/* <img className="w-9 sm:w-8em xl:w-10rem shadow-2 block xl:block mx-auto border-round" src={logo} alt="Logo" style={{ width: '3%' }}/> */}
+          <Menubar model={items} onClick={handleClick} style={{ width: '100%', backgroundColor: '#fffff', color: '#b12c16' }} />
+        </div>
+      </div>
 
-            >
-              {'Sign Up'}
-            </Link>
-          </Box>
-        </Toolbar>
-      </AppBar> */}
-      
+
     </div>
+    
   );
 }
 
